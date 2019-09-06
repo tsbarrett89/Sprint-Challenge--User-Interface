@@ -69,9 +69,11 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 header {
@@ -104,39 +106,45 @@ nav a {
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
+    width: 100%;
+    padding: 0 2%;
     padding-bottom: 20px;  
 }
 
 .middle-content {
+    width: 800px;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+    /* border-bottom: 1px dashed black; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.middle-content .middle-content-container {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    margin: 2%;
+}
+
+.middle-content .middle-content-container img{
+    width: 100%;
+    margin: 2% 0%; 
+}
+
+.middle-content .middle-content-container button{
+    margin: 4% 0%;
+    width: 35%;
+    height: 30px;
+    border-radius: 12px;
+    border-color: black;
 }
 
 .bottom-content {
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+/* .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
@@ -148,7 +156,7 @@ nav a {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
-}
+} */
 
 footer {
     width: 100%;
